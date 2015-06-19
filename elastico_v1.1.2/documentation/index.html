@@ -1,0 +1,522 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Elastico : Responsive Wordpress Theme | Documentation</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:20px; }
+		.box p { margin-bottom:10px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;Elastico&rdquo; Documentation by &ldquo;SpadeInvaders&rdquo; v1.1.1</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;Elastico&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 07/20/2012<br>
+					Last Update : 08/21/2012<br/>
+					By: SpadeInvaders<br>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing our theme. If you have any questions that are beyond the scope of this help file, please feel free to email via our user page contact form <a href="http://themeforest.net/user/spadeinvaders">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#installation">Installation</a></li>
+			<li><a href="#theme-options">Theme Options</a></li>
+			<li><a href="#portfolio">Setting up the Portfolio</a></li>
+			<li><a href="#gallery-post-type">Setting up the Galleries (Custom Post Type)</a></li>
+			<li><a href="#blog">Setting up the Blog</a></li>
+			<li><a href="#gallery-page">Setting up a Gallery page</a></li>
+			<li><a href="#background-image-page">Setting up a page with a Background Image </a></li>
+			<li><a href="#video-page">Setting up a Fullscreen Video page</a></li>
+			<li><a href="#slider-page">Setting up a Fullscreen Slider page</a></li>
+			<li><a href="#contact">Setting up the Contact page</a></li>
+			<li><a href="#archives">Setting up the Archives page</a></li>
+			<li><a href="#menu">Setting up the Menu</a></li>
+			<li><a href="#widgets">Custom Widgets</a></li>
+			<li><a href="#shortcodes">Shortcodes</a></li>
+			<li><a href="#translation">Translation</a></li>
+			<li><a href="#cssFiles">CSS Files</a></li>
+			<li><a href="#psdFiles">PSD Files</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+			
+		</ol>
+		
+		<hr>
+		
+		<h3 id="installation"><strong>A) Installation</strong> - <a href="#toc">top</a></h3>
+		<p>First of all you must have a working version of WordPress (at least Wordpress 3.3) already installed. If you need help installing Wordpress please see the Wordpress Codex:
+		<a href="http://codex.wordpress.org/Installing_WordPress">http://codex.wordpress.org/Installing_WordPress</a></p>
+		<p>Unzip the file you download after purchase. The following files and folders will be in the unzipped file:</p>
+		<ul>
+			<li>documentation</li>
+			<li>licensing</li>
+			<li>psd</li>
+			<li>elastico</li>
+			<li>elastico.zip</li>
+		</ul>
+		<p>The theme files can be uploaded in two ways:<br/>
+		- FTP Upload: Upload the non-zipped elastico folder into the /wp-content/themes/ folder on your server using your FTP program<br/>
+		- WordPress Upload: In the WordPress admin go to Appearance > Install Themes > Upload. Browse the zipped theme folder elastico.zip and Click "Install Now".
+		</p>
+		<p>Once the theme is uploaded, go to Appearance > Themes and activate the theme.</p>
+
+		
+		<hr>
+
+		<h3 id="theme-options"><strong>B) Theme Options</strong> - <a href="#toc">top</a></h3>
+
+		<p>The theme comes with a simple to use administration panel where you can configure a number of options to taylor the theme to fit your needs.
+     	You can access it by navigating to Appearance > Theme Options.<br/>
+		 Every option in that panel comes with an instruction next to it, so you can find out easily its usage. </p>
+		<p><strong>General Settings : </strong> Here you have options to upload your own logo and favicon, insert your Google Analytics and disable right click.<br/>
+		<strong>Styling Options : </strong>Here you can set the link hover color and insert some custom CSS code.<br/>
+		<strong>Portfolio Settings : </strong>Here you can configure the portfolio page settings.<br/>	
+		<strong>Gallery Settings : </strong>Here you can configure the gallery listing page settings.<br/>		
+		<strong>Contact Infos : </strong>Here you can enter address, phone, fax, email and configure your Google Map.<br/>
+		<strong>Sidebar Settings : </strong> Here you can enable/disable the overlay widgets panel and set the copyright information.<br/>
+		<strong>Social Settings : </strong> Here you can add your social networks links.<br/>
+		<p><img src="assets/images/screenshot1.jpg" alt="Theme Options" /></p>
+		<hr>
+		
+		
+		
+		<h3 id="portfolio"><strong>C) Setting up the Portfolio</strong> - <a href="#toc">top</a></h3>
+		To set up the portfolio, create a new page by navigating to Pages > Add New. Give it a title, select the "Portfolio" template from the
+		Page Attributes section and click Publish.
+		Your portfolio page is now ready to showcase the portfolio items.</p>
+		
+		<strong>Portfolio Settings</strong>
+		<p>By going to Appearance > Theme Options > Portfolio Settings you can configure your portfolio page.<br/>
+		Since elastico v1.1, you can use a "Load More" button if you need to display a lot of portfolio items.</p>
+
+		<p><img src="assets/images/screenshot21.jpg" alt="Portfolio Settings" /></p>
+		
+		
+		<strong>Adding Portfolio Items</strong>
+		<p>To add a new portfolio item, navigate to Portfolios > Add New. 
+		Here you can add the title of the project, a description in the main text editor, enter project details (client, date, url), upload medias, type an excerpt and assign various categories.</p>
+
+		<strong>Set preview image</strong>
+		<p>You have to set a "featured image" to each portfolio item that will be diplayed on the portfolio page.
+		To do so, upload an image and set it as featured image. 
+		The image will be automatically cropped to the appropriate dimensions. But if you want to control exactly how it displays, upload a featured image of 400px x 225px.</p>
+		<strong>Enter the project details</strong>
+		<p>You can specify the client, date and url of the project.<br/>
+		Set which type of portfolio you want to display, you have the choice between Images, Video & Audio.</p>
+		<p><img src="assets/images/screenshot2.jpg" alt="Enter Portfolio Details" /></p>
+
+		<strong>Adding Images</strong>
+		<p>A portfolio item can display a slider with an unlimited number of images by retrieving all the images attached to the portfolio post except the featured image.<br/> 
+		When selecting the Images portfolio type, an Images Settings box appears.</p>
+		<p><img src="assets/images/screenshot3.jpg" alt="Adding Images to Portfolio" /></p>
+		<p>Simply upload your images using the "Upload Images" link. 
+		<br/>For each slide you can add a caption by entering some text in the caption input.
+		<br/>The slider enables you to display different image formats (16:9, 4:3, portrait ...) : depending on the width/height ratio of each image, the image in the slider will automatically occupy a certain percentage of the space. 
+		If you want to enter a specific percentage for each image and override the default value, enter a number between 1 and 100 in the percentage input.
+		(<em>Note: you will only be able to see this custom input once you have published the portfolio item</em>).
+		</p>
+		<p><img src="assets/images/screenshot4.jpg" alt="Adding Images to Portfolio" /></p>
+			
+
+		<strong>Adding Video</strong>
+
+		<p>A portfolio item can display a Self Hosted Video, a Youtube or Vimeo video or any other video.<br/>
+		When selecting the Video portfolio type, a Video Settings box appears:<br/>
+		- If you want to display a Self Hosted video, specify both .m4v and .ogv files so that the video works in all browsers, and upload a Poster Image.<br/>
+		- If you want to display a Youtube or Vimeo video, enter the video's url (e.g. http://www.youtube.com/watch?v=VIDEO_ID or http://vimeo.com/VIDEO_ID).<br/>
+		- If you want to display a video from other sharing video website (e.g Dailymotion), enter the embed code.<br/>
+		- By default the video aspect ratio is 16:9. If you want to change it, enter the video's width and video's height under the Aspect ratio section.
+		</p>
+		<p><img src="assets/images/screenshot5.jpg" alt="Adding Video to Portfolio" /></p>
+		
+		
+		<strong>Adding Audio</strong>
+
+		<p>A portfolio item can display an audio player.<br/>
+		When selecting the Audio portfolio type, an Audio Settings box appears. <br/>
+		Either you specify both .mp3 and .oga/.ogg files so that the audio works in all browsers, and upload optionally a Poster Image.<br/>
+		Or you use an audio sharing service e.g. SoundCloud, you need to paste the embed code.	</p>
+		<p><img src="assets/images/screenshot6.jpg" alt="Adding Audio to Portfolio" /></p>
+		
+		<strong>Portfolio Custom URL</strong>
+		<p>If you to want to link a portfolio item to a custom URL instead of its single portfolio page, enter the url (with http:// prefix) in the Porfolio Custom URL input.</p>
+		<p><img src="assets/images/screenshot22.jpg" alt="Portfolio Custom URL" /></p>
+	
+		<strong>Adding Portfolio Categories (Portfolio Categories Box)</strong>
+		<p>To categorise your portfolio items, you can assign categories to them within the Portfolio Categories Box.
+		Assigning categories to the portfolio items will allow the users to filter your portfolio by categories. 
+		Also the categories will be displayed when hovering each portfolio item's thumbnail (if in the 
+		Theme Options > Portfolio Settings, you have chosen to display the portfolio categories).
+		You can create new categories by navigating to Portfolio > Portfolio Categories or you can directly create them from the portfolio item page.</p>
+		<p><img src="assets/images/screenshot7.jpg" alt="Portfolio Categories" /></p>
+
+		<strong>Adding Excerpt</strong>
+		<p>You can enter an excerpt for each portfolio item by typing a short text inside the Excerpt box.
+		Each portfolio item will display its excerpt when hovering each portfolio item's thumbnail, if you have chosen in the Theme Options (Theme Options > Portfolio Settings) to display the excerpt rather than the categories.
+		
+		<p><img src="assets/images/screenshot8.jpg" alt="Portfolio Excerpt" /></p>
+		<hr>
+		
+		
+		<h3 id="gallery-post-type"><strong>D) Setting up the Galleries (Custom Post Type)</strong> - <a href="#toc">top</a></h3>
+		To set up the page which displays all the gallery custom post type, create a new page by navigating to Pages > Add New. Give it a title, select the "Galleries List" template from the
+		Page Attributes section and click Publish.
+		Your page is now ready to showcase the gallery custom post type items.</p>
+		
+		<strong>Gallery Settings</strong>
+		<p>By going to Appearance > Theme Options > Gallery Settings you can configure your main gallery page.<br/>
+		You can use a "Load More" button if you need to display a lot of gallery items.</p>
+
+		<p><img src="assets/images/screenshot23.jpg" alt="Gallery Settings" /></p>
+		
+		
+		<strong>Adding Gallery Items</strong>
+		<p>To add a new gallery item, navigate to Galleries > Add New.</p>
+		
+		<strong>Set preview image</strong>
+		<p>You have to set a "featured image" to each gallery item that will be displayed on the main gallery page.
+		To do so, upload an image and set it as featured image. 
+		The image will be automatically cropped to the appropriate dimensions. But if you want to control exactly how it displays, upload a featured image of 400px x 225px.</p>
+		
+		<strong>Gallery Type</strong>
+		<p>For each gallery item, you have to select which type you want to display, you have the choice between "Infinite Scroll" or "Fullscreen".<br/>
+		A gallery item can display an unlimited number of images by retrieving all the images attached to the gallery post except the featured image.
+		Simply upload your images using the "Upload Images" link and set the order you want. Make sure that <strong>for the "Infinite Scroll" option you set an order for your images</strong>, otherwise issue may arise.</p>
+		<p><img src="assets/images/screenshot24.jpg" alt="Gallery Type" /></p>
+		
+		<p>When selecting the "Infinite Scroll" option, set the number of images you want to show per loading and choose if you want to display the lightbox title.</p>
+		<p><img src="assets/images/screenshot25.jpg" alt="Gallery Infinite Scroll Settings" /></p>
+		<p>When selecting the "Fullscreen" option, set if you want to autoplay it and choose if you want to display the title on each slide.</p>
+		<p><img src="assets/images/screenshot26.jpg" alt="Gallery Fullscreen Settings" /></p>
+
+		
+		<strong>Gallery Custom URL</strong>
+		<p>If you to want to link a gallery item to a custom URL instead of its single gallery page, enter the url (with http:// prefix) in the Gallery Custom URL input.</p>
+		<p><img src="assets/images/screenshot27.jpg" alt="Gallery Custom URL" /></p>
+	
+		<strong>Adding Gallery Categories</strong>
+		<p>To categorise your gallery items, you can assign categories to them within the Gallery Categories Box.
+		Assigning categories to the gallery items will allow the users to filter your galleries by categories. 
+		Also the categories will be displayed when hovering each pgallery item's thumbnail (if in the 
+		Theme Options > Gallery Settings, you have chosen to display the Gallery categories).
+		<p><img src="assets/images/screenshot28.jpg" alt="Gallery Categories" /></p>
+
+		<strong>Adding Excerpt</strong>
+		<p>You can enter an excerpt for each gallery item by typing a short text inside the Excerpt box.
+		Each gallery item will display its excerpt when hovering each gallery item's thumbnail, if you have chosen in the Theme Options (Theme Options > Gallery Settings) to display the excerpt rather than the categories.
+		
+		<p><img src="assets/images/screenshot8.jpg" alt="Gallery Excerpt" /></p>
+		<hr>
+		
+		
+		
+		
+		<h3 id="blog"><strong>E) Setting up the Blog</strong> - <a href="#toc">top</a></h3>
+		<p>To set up the blog, create a new page, give it a title and click "Publish". Next go to Settings > Reading and configure the “Front
+Page Displays” setting. Select "a static page" option and choose the page you just created as your Posts page. Otherwise, if you want to display
+		your blog page as the front page, select "Your latest posts" option.
+		Your blog page is now ready to display your posts.</p>
+		
+		<h3><strong>Creating posts for the Blog</strong></h3>
+		<p>This theme comes with the following post formats: Standard, Image, Gallery, Video, Audio, Link, Quote and Status.<br/>
+		When creating a post, you can choose which format to use.</p>
+		<p><img src="assets/images/screenshot9.jpg" alt="Post Formats" /></p>
+
+		<p><strong>Standard</strong><br/>Use this format to display a standard post with only title and content.</p>
+		<p><strong>Image</strong><br/>Use this format to display a post with title, content and the featured image. <br/>
+		When selecting the Image format, an Image Settings box appears: You can choose whether you wish to use the lightbox to display the full image on the single post.</p>
+		<p><img src="assets/images/screenshot10.jpg" alt="Image Format" /></p>
+		
+		<p><strong>Gallery</strong><br/>Use this format to display an image slider along with the title and content.<br/>
+		When selecting the Gallery format, a Gallery Settings box appears: Upload your images. You can choose whether you wish to use the lightbox to display the full images on the single post.</p>
+		<p><img src="assets/images/screenshot11.jpg" alt="Gallery Format" /></p>
+		
+		<p><strong>Video</strong><br/>Use this format to display a video along with the title and content.<br/>
+		When selecting the Video format, a Video Settings box appears: You have the choice between Self Hosted Video,  Youtube/Vimeo  or any other video.<br/>
+		- If you want to display a Self Hosted Video, specify both .m4v and .ogv files so that the video works in all browsers, and upload a Poster Image.<br/>
+		- If you want to display a Youtube or Vimeo video, enter the video's url (e.g. http://www.youtube.com/watch?v=VIDEO_ID or http://vimeo.com/VIDEO_ID).<br/>
+		- If you want to display a video from other sharing video website (e.g Dailymotion), enter the embed code.<br/>
+		- By default the video aspect ratio is 16:9. If you want to change it, enter the video's width and video's height under the Aspect ratio section.</p>
+		<p><img src="assets/images/screenshot12.jpg" alt="Video Format" /></p>
+			
+		<p><strong>Audio</strong><br/>Use this format to display an audio player along with the title and content.<br/>
+		When selecting the Audio format, an Audio Settings box appears :<br/>
+		- Either you specify both .mp3 and .oga/.ogg files so that the audio works in all browsers, and upload optionally a Poster Image.<br/>
+		- Or you use an audio sharing service e.g. SoundCloud, you need to paste the embed code.</p>
+		<p><img src="assets/images/screenshot13.jpg" alt="Audio Format" /></p>
+		
+		<p><strong>Link</strong><br/>Use this format to display a link along with the content.<br/>
+		When selecting the Link format, a Link Settings box appears: Enter the URL you wish to link the title to.</p>
+		<p><img src="assets/images/screenshot14.jpg" alt="Link Format" /></p>
+		
+		<p><strong>Quote</strong><br/>Use this format to display a quote along a source and the content.<br/>
+		When selecting the Quote format, a Quote Settings box appears:	Enter your quote and optionally its source.</p>
+		<p><img src="assets/images/screenshot15.jpg" alt="Quote Format" /></p>
+			
+		<p><strong>Status</strong><br/>Use this format to display a Tweet.<br/>
+		With WordPress 3.4+, you can embed a tweet simply by entering its URL in the main content editor.</p>
+		
+		<h3 id="gallery-page"><strong>F) Setting up a Gallery page</strong> - <a href="#toc">top</a></h3>
+		<p> This theme comes with a Gallery template that allows you to showcase your images in an infinite gallery i.e. when the user scrolls down, more images appear.
+		<br/>
+		To set up a gallery, create a new page by navigating to Pages > Add New. Give it a title, select the "Gallery" template from the
+		Page Attributes section and click Publish.<br/>
+		If you want to add some introduction to the gallery, use the main editor, the text will appear in the first box before the images.<br/>
+		Use the Gallery Settings box to manage your gallery: <br/>
+		- Upload your images by using the "Upload Images" link. Make sure that <strong>you set an order</strong> for your images, otherwise issue may arise.<br/>
+		- You can specify the number of images per ajax loading in the "Number of Images" input.<br/>
+		- You can choose whether to display the title for each image when the lightbox opens.<br/>
+		- If you want to open a Youtube or Vimeo video within the lightbox, specify the url in the "Video Link URL" custom input (you'll only be able to see this custom input
+		once your page is published).</p>	 
+		<p><img src="assets/images/screenshot16.jpg" alt="Gallery Settings" /></p>
+		<p><img src="assets/images/screenshot17.jpg" alt="Gallery Settings" /></p>
+		<hr>
+		
+		<h3 id="background-image-page"><strong>G) Setting up a page with a Background Image</strong> - <a href="#toc">top</a></h3>
+		<p> This theme comes with a Background Image template.<br/>
+		To set up a page with a background image, create a new page by navigating to Pages > Add New. Give it a title, select the "Background Image" template from the
+		Page Attributes section and click Publish.<br/>
+		In the Background Settings box, upload your background image.</p>	 
+		<p><img src="assets/images/screenshot18.jpg" alt="Background Image Page" /></p>
+	
+		<hr>
+		
+		<h3 id="video-page"><strong>H) Setting up a Fullscreen Video page</strong> - <a href="#toc">top</a></h3>
+		<p> This theme comes with a Fullscreen Video template.<br/>
+		To set up a Fullscreen Video page, create a new page by navigating to Pages > Add New. Give it a title, select the "Fullscreen Video" template from the
+		Page Attributes section and click Publish.<br/>
+		In the Video Settings box, enter a Youtube or Vimeo URL and choose if you want to autoplay it.</p>	 
+		<p><img src="assets/images/screenshot19.jpg" alt="Fullscreen Video Page" /></p>
+	
+		<hr>
+		
+		<h3 id="slider-page"><strong>I) Setting up a Fullscreen Slider page</strong> - <a href="#toc">top</a></h3>
+		<p> This theme comes with a Fullscreen Slider template.<br/>
+		To set up a Fullscreen Slider page, create a new page by navigating to Pages > Add New. Give it a title, select the "Fullscreen Slider" template from the
+		Page Attributes section and click Publish.<br/>
+		In the Slider Settings box, choose if you want to autoplay the slideshow and upload your images.</p>
+		<p><img src="assets/images/screenshot29.jpg" alt="Fullscreen  Slider Page" /></p>
+		To configure the caption on each slide (content, colors, position, link button), for each image set the caption settings parameters that appear on the Media Uploader > Gallery tab (you'll only be  able to see these custom
+		inputs once the page is published).</p>
+		<p><img src="assets/images/screenshot30.jpg" alt="Slide Caption" /></p>
+		
+	
+		<hr>
+		
+		
+		
+		<h3 id="contact"><strong>J) Setting up the Contact page</strong> - <a href="#toc">top</a></h3>
+		<p>This theme comes with a Contact template. To set up the contact page, create a new page by navigating to Pages > Add New. 
+		Give it a title, select the "Contact" template from the Page Attributes section and click Publish.<br/>
+		The contact page is separated in two parts. On the left it displays the content entered in the the main text editor of the page and on the right the
+		informations that you give in Theme Options (Appearance > Theme Options > Contact Infos).</p>
+		<p>In order to add a contact form to the website, you have to install the Contact Form 7 plugin.	
+		You can either download it from here:
+		<a href="http://wordpress.org/extend/plugins/contact-form-7/"> http://wordpress.org/extend/plugins/contact-form-7/</a>
+		and activate it or go to Plugins > Add new, search for "Contact Form 7", hit Install Now and activate it.
+		Once installed, navigate to the plugin settings page under Contact menu in order to create a form. Once you're done, copy the generated shortcode that 
+		is similar to [contact-form 1 "Contact form 1"] and paste it in your contact page.
+		</p>
+		
+		<p> <strong>Configure the Google Map</strong><br/>
+		You can chooose to display a google map by going to Appearance > Theme Options > Contact Infos.<br/>
+		You need to specify the latitude and longitude of your location. To get them, type your location on Google Map. Once located, right-click on your location, 
+		a context menu appears and click "What's Here?". Your coordinates will appear on the search input.<br/>
+		Next, set a zoom value (0 < zoom < 21) and select the type of the map.<br/>
+		Optionally, you can upload a custom marker icon. If you do so, you need to specify its size and the coordinates of its anchor.</p>
+
+	
+		<hr>
+		
+		
+		<h3 id="archives"><strong>K) Setting up the Archives page</strong> - <a href="#toc">top</a></h3>
+		<p> This theme comes with an Archives template. To set it up, create a new page by navigating to Pages > Add New. 
+		Give it a title, select the "Archives" template from the Page Attributes section and click Publish.</p>	 
+		
+	
+		<hr>
+		
+		<h3 id="menu"><strong>L) Setting up the Menu</strong> - <a href="#toc">top</a></h3> 
+		<p>This Theme comes with a custom menu location in the left sidebar - the Main Navigation. 
+		To set up your custom menu, go to Appearance > Menus. Create a new menu, give it a name and build it.
+		Once built, save it and assign to the "Primary Menu" location.</p>
+		<hr>
+		
+		
+		
+		<h3 id="widgets"><strong>M) Custom Widgets</strong> - <a href="#toc">top</a></h3> 
+		<p>In addition to the available widgets already included in Wordpress, the theme comes with 2 custom widgets, a Custom Flickr Photos Widget & a Custom Twitter Feed Widget, that can  be found under Appearance > Widgets.</p>
+
+		<strong>Custom Flickr Photos Widget</strong>
+		<p>This widget allows you to configure and display Flickr photos from a user's photostream.</p>
+			<ul>
+				<li> Title: Title of the widget</li> 
+				<li> Flickr ID: The Flickr ID of the user or group's photos you want to display. To find your Flickr ID, go to <a href="http://idgettr.com/" target="_blank">idGettr.com</a></li> 
+				<li> Number of Photos: Select the number of photos to display</li> 
+				<li> Type (user or group): The type of user photos you want display</li> 
+				<li> Display (random or latest): Select how to display the photos</li> 
+			</ul>
+				
+		<strong>Custom Twitter Feed Widget</strong>
+			<p>This widget allows you to configure and display your latest tweets.</p>
+			<ul>
+				<li>Title: Title of the widget</li>
+				<li>Twitter Username: The username of the user's tweets you want to display</li>
+				<li>Number of Tweets: Type the number of tweets you want to display</li>
+				<li>Follow Text: Choose the anchor text of the link to your Twitter profile. Leave it blank if you don't want to display a link</li>
+			</ul>
+		<hr>
+		
+		<h3 id="shortcodes"><strong>N) Shortcodes</strong> - <a href="#toc">top</a></h3>
+		<p>The theme comes with several shortcodes allowing you to add styled content to your site very easily. 
+		To add them when creating a page or post, click the "+" icon. 
+		A panel with a list of functionalities will appear, choose the one you wish to include and click "insert".</p>
+		<p><img src="assets/images/screenshot20.jpg" alt="Shortcodes" /></p>
+			<strong>Columns Shortcodes</strong>
+			<p>The content can be split into multiple columns. For example, the option "One Half" from the shortcode panel will insert the necessary code to 
+			split the content into two columns.<br/>
+			Important: You must end each set of columns with a "last" option such as "one_half_last".</p>
+			<pre>[one_half] Insert you content here [/one_half]
+[one_half_last] Insert you content here [/one_half_last]</pre>
+
+			<strong>Toggle Shortcode</strong>
+			<p>The toggle shortcode allows you to display your content in a container than can be toggled open/closed by the user.</p>
+				<pre>[toggle title="Title goes here"] Insert toggle content here [/toggle]</pre>
+
+			<strong>Accordion Shortcode</strong>
+			<p>The accordion shortcode allows you to insert content into multiple containers that can be toggled open/closed by the user.
+		
+			<pre>[accordions]
+	[accordion title="Accordion 1 Title"]Insert accordion 1 content here[/accordion]
+	[accordion title="Accordion 2 Title"]Insert accordion 2 content here[/accordion]
+	[accordion title="accordion 3 Title"]Insert accordion 3 content here[/accordion] 
+[/accordions]</pre>
+			</p>
+			
+			<strong>Tabs Shortcodes</strong>
+			<p>The tabs content shortcode allows you to insert content into multiple tabs. 
+			<pre>[tabs]
+	[tab title="Tab 1 Title"]Insert tab 1 content here[/tab] 
+	[tab title="Tab 2 Title"]Insert tab 2 content here[/tab] 
+	[tab title="Tab 3 Title"]Insert tab 3 content here[/tab]
+[/tabs]</pre>
+					
+
+			<strong>Dropcap Shortcode</strong>
+			<p>Emphasizes a letter by making it larger than the rest of the text.
+			<pre>[dropcap]T[/dropcap]his is a dropcap</pre>
+			</p>
+			
+			<strong>Highlight Shortcode</strong>
+			<p>Highlights your text by adding a yellow background to it.
+			<pre>[highlight]Insert your content to be highlighted here [/highlight]</pre></p>
+			
+			
+			<strong>Button Shortcodes</strong>
+			<p>Create a button with a colored background.
+			<pre>[button_black url="# target="_self"]Button Text[/button_black]
+[button_blue url="#" target="_self"]Button Text[/button_blue]</pre>
+
+
+
+		
+		<hr>
+		
+		
+		<h3 id="translation"><strong>O)Translation</strong> - <a href="#toc">top</a></h3>
+		<p>	This theme is fully localized and ready for translation. It also includes the French translation file.<br/>
+		In the theme files inside the languages folder, you can find default.po file.
+		Rename it to xx_XX.po where the 'xx' is the locale code for the language to translate to, and the 'XX' is the country code, e.g. for French: fr_FR.po.
+		In order to edit the file, you need to use an editor like <a href="http://www.poedit.net/">Poedit</a>. Translate each string and save the file.
+		PoEdit will automatically compile and generate a .mo file (e.g. fr_FR.mo) that is used by Wordpress for translating your messages<br/>
+		After that, open wp-config.php file at the root of your Wordpress website. Search for the PHP code: define ('WPLANG', ''); and replace it 
+		 with your language code e.g. :define ('WPLANG', 'fr_FR');
+		</p>
+
+					
+		
+		
+		
+		<hr>
+		<h3 id="cssFiles"><strong>P) CSS Files</strong> - <a href="#toc">top</a></h3>
+		<p>We're using 1 CSS file in this theme.</p>
+		<ul>
+			<li>style.css - The theme's stylesheet</li>	
+		</ul>
+		<hr>
+		
+		<h3 id="psdFiles"><strong>Q) PSD Files</strong> - <a href="#toc">top</a></h3>
+		
+		<p>We've included eight psds with this theme:</p>
+		
+			<ul>
+				<li>the Portfolio Page</li>
+				<li>the Portfolio Single Page</li>
+				<li>the Blog Page</li>
+				<li>the Blog Single Post</li>
+				<li>the Archives Page</li>				
+				<li>the Gallery Page</li>
+				<li>the Contact Page</li>
+				<li>the About Page</li>
+			</ul>
+		
+		<hr>
+		
+		<h3 id="credits"><strong>R) Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>We've used the following images, icons or other files as listed.
+		
+		<ul>
+			<li>jQuery Library - <a href="http://jquery.com/">http://jquery.com/</a></li>
+			<li>Isotope - <a href="http://isotope.metafizzy.co/">http://isotope.metafizzy.co/</a></li>	
+			<li>Flexslider - <a href="http://www.woothemes.com/flexslider/">http://www.woothemes.com/flexslider/</a></li>
+			<li>Fitvids - <a href="http://fitvidsjs.com/">http://fitvidsjs.com/</a></li>
+			<li>mobileMenu - <a href="https://github.com/mambows/mobilemenu">https://github.com/mambows/mobilemenu</a></li>			
+			<li>Fancybox - <a href="http://fancybox.net/">http://fancybox.net/</a></li>			
+			<li>jPlayer - <a href="http://jplayer.org/">http://jplayer.org/</a></li>
+			<li>gMap - <a href="http://github.com/marioestrada/jQuery-gMap">http://github.com/marioestrada/jQuery-gMap</a></li>
+			<li>Debounced Resize - <a href="https://github.com/louisremi/jquery-smartresize">https://github.com/louisremi/jquery-smartresize</a></li>
+			<li>hoverIntent -	<a href="http://cherne.net/brian/resources/jquery.hoverIntent.html">http://cherne.net/brian/resources/jquery.hoverIntent.html</a></li>
+			<li>jQuery Tools - <a href="http://flowplayer.org/tools/index.html">http://flowplayer.org/tools/index.html</a></li>
+			<li>Supersized <a href="http://buildinternet.com/project/supersized/">http://buildinternet.com/project/supersized/</a></li>
+			<li>Contact Form 7 Plugin - <a href="http://contactform7.com/">http://contactform7.com/</a></li>
+			<li>Options Framework Theme - <a href="http://wptheming.com/options-framework">http://wptheming.com/options-framework</a></li>
+			<li>Portfolio icons by Ben Dunkle</li>
+
+	
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this theme. As we said at the beginning, we'd be glad to help you if you have any questions relating to this theme. No guarantees, but we'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>SpadeInvaders</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

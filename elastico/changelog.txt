@@ -1,0 +1,147 @@
+***** Elastico Changelog *****
+
+Before updating the theme, it is safer to create a backup of your database and your Theme Options settings.
+If you have previously made modifications in the theme, make sure to keep a copy of the modified files so you can replace them after.
+
+25 August 2012 - Version 1.1.2
+
+	* New Features
+	- Password protected portfolio item
+
+	* Fixes for the following bugs:
+	
+	- Slider caption fix (addslashes)
+	- Fix taxonomy portfolio & category
+	- Fix typos + code refactoring CSS & Javascript
+
+	Files updated:
+	
+	- single-portfolio.php
+	- taxonomy-portfolio-category.php
+	- taxonomy-gallery-category.php
+	- template-contact.php
+	- template-slider.php
+	- js/jquery.archive.js
+	- js/jquery.blog.js
+	- js/jquery.gallery.js
+	- js/jquery.infinitegallery.js
+	- js/jquery.portfolio.js
+	- style.css
+	
+
+21 August 2012 - Version 1.1.1
+	
+	* Fixes for the following bugs:
+
+	- Fix for missing typo ( bracket } ) which breaks some css
+
+	
+	Files updated:
+	
+	- functions/theme-functions.php
+
+
+
+18 August 2012 - Version 1.1
+	
+	*New Features:
+
+	- Portfolio Load More Option
+	- Gallery Custom Post Type 
+	- Fullscreen Slider Template
+	- Audio embed e.g. SoundCloud
+	- Portfolio Custom Link
+	- Fullscreen Video Autoplay
+	- Video Ratio Settings
+	- Alt tag on Portfolio
+	- Choice to replace map by image
+	- Instagram + Tumblr social icons
+	
+
+	
+	* Fixes for the following bugs:
+	
+	- Full Background IE9
+	- Infinite Scroll Gallery Images in Double
+	
+	
+	Files updated:
+	
+	- functions/js/jquery.admin.custom.js
+	- functions/meta-functions.php
+	- functions/page-meta.php
+	- functions/portfolio-meta.php
+	- functions/post-meta.php
+	- functions/theme-functions.php
+
+	- images/social-icons.gif
+
+	- includes/postformats/audio.php
+	- includes/postformats/video.php	
+	- includes/postformats/single/audio.php
+	- includes/postformats/single/video.php
+
+	- js/jquery.infinitegallery.js
+	- js/jquery.portfolio.js
+
+	- languages/default.po
+	- languages/fr_FR.po
+
+	- functions.php
+	- header.php
+	- options.php
+	- sidebar.php
+	- single-portfolio.php
+	- style.css
+	- template-bg.php
+	- template-contact.php
+	- template-gallery.php
+	- template-porfolio.php
+
+
+	Added Files:
+	
+	- functions/gallery-meta.php
+	- functions/post-type-gallery.php
+	- functions/css/si-admin.css
+
+	- images/slider-mobile.png
+
+	- js/jquery.gallery.js
+	- js/supersized3.2.7.min.js
+	- js/supersized.shutter.js
+
+	- loop-gallery.php
+	- loop-portfolio.php
+	- single-gallery.php
+	- taxonomy-gallery-category.php
+	- template-gallery-listing.php
+	- template-slider.php
+
+
+
+
+
+
+
+27 July 2012 - Version 1.0.1
+	
+	* Fixes for the following bugs:
+	
+	- Fix for header styling & map on mobile phones
+	- Fix for Google Analytics script tags
+	- Minor Fix for Infinite Scrolling Gallery
+	- Fix for Scheduled and Draft posts in the blog
+	
+	
+	Files updated:
+	
+	- style.css
+	- admin/options-sanitize.php
+	- js/jquery.infinitegallery.js
+	- functions.php
+	
+
+25 July 2012 - Version 1.0
+	
+	* First Release 
